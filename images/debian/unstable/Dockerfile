@@ -25,5 +25,6 @@ RUN apt clean
 
 RUN echo VARIANT_ID=container >> /etc/os-release
 RUN touch /etc/localtime
+RUN ln -s /bin/sh /usr/bin/sh
 
 CMD /bin/sh
